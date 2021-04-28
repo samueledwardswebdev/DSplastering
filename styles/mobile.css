@@ -1,0 +1,147 @@
+/* Navbar */
+
+.navbar {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar ul {
+  margin-top: 10px;
+}
+.navbar ul li a {
+  margin: 0 5px;
+}
+
+/* Showcase */
+
+.showcase-container {
+  width: 90%;
+  text-align: center;
+}
+
+.showcase-content {
+  flex-direction: column;
+  width: 100%;
+}
+
+.showcase-title {
+  writing-mode: unset;
+  margin-bottom: 20px;
+}
+
+.showcase-heading {
+  padding: 0;
+}
+
+.showcase-heading h1 {
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+.showcase-social {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.showcase-social i {
+  margin: 20px 10px;
+}
+
+/* About */
+
+#about {
+  height: 100%;
+}
+
+.about-container {
+  grid-template-columns: repeat(1,1fr);
+  width: 100%;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.about-title {
+  display: none;
+}
+
+/* Banner */
+
+#quote-banner {
+  height: 70vh;
+}
+
+.quote-banner-container .btn {
+  width: 50%;
+}
+
+/* Services */
+
+#services {
+  height: 100%;
+  padding: 3rem 1rem;
+}
+
+.services-container {
+  grid-template-columns: repeat(2,1fr);
+  width: 100%;
+}
+
+.services-item h2 {
+  font-size: 1rem;
+}
+
+.projects-container {
+  width: 100%;
+  padding: 0 1rem;
+  grid-template-columns: repeat(1,1fr);
+  gap: 2rem;
+}
+
+.projects-container .reverse {
+  flex-direction: row-reverse;
+}
+
+.projects-item {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.projects-item h3 {
+  padding: 0 5px;
+}
+
+/* Footer */
+
+#contact {
+  height: 100%;
+  padding: 3rem 1rem;
+}
+
+.contact-wrapper {
+  flex-direction: column;
+}
+
+.contact-wrapper h2 {
+  writing-mode: unset;
+  margin-bottom: 20px;
+}
+
+.form-wrapper {
+  width: 100%;
+  padding: 0;
+}
+
+.form-wrapper button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-info i {
+  margin-bottom: 20px;
+}
+
+.contact-info h4 {
+  margin-bottom: 20px;
+}
