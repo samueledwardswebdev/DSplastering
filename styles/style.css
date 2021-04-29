@@ -19,6 +19,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   background: var(--white-clr);
@@ -291,21 +295,21 @@ hr {
 /* Services */
 
 #services {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 1rem;
+  padding: 4rem 1rem;
 }
 
 .services-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(5,1fr);
   gap: 10px;
 }
 
 .services-item {
-  height: 300px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -316,7 +320,9 @@ hr {
   border-radius: 5px;
   box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
   overflow: hidden;
+  text-align: center;
   transition: all ease 0.8s;
+  padding: 1rem;
 }
 
 .services-item:hover {
@@ -325,12 +331,20 @@ hr {
 
 .services-item h2 {
   letter-spacing: var(--letter-spacing);
+  font-size: 1.3rem;
+}
+
+#services > h2 {
+  text-align: center;
+  color: var(--dark-clr);
+  letter-spacing: var(--letter-spacing);
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .item-1::before {
   content: '';
-  background: url('../img/pro-1.jpg') no-repeat center center/cover;
+  background: url('../img/services-1.jpg') no-repeat center center/cover;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -341,7 +355,7 @@ hr {
 
 .item-2::before {
   content: '';
-  background: url('../img/pro-2.jpg') no-repeat center center/cover;
+  background: url('../img/services-2.jpg') no-repeat center center/cover;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -352,7 +366,7 @@ hr {
 
 .item-3::before {
   content: '';
-  background: url('../img/pro-3.jpg') no-repeat center center/cover;
+  background: url('../img/services-3.jpg') no-repeat center center/cover;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -363,7 +377,7 @@ hr {
 
 .item-4::before {
   content: '';
-  background: url('../img/pro-2.jpg') no-repeat center center/cover;
+  background: url('../img/services-4.jpg') no-repeat center center/cover;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -374,7 +388,7 @@ hr {
 
 .item-5::before {
   content: '';
-  background: url('../img/pro-3.jpg') no-repeat center center/cover;
+  background: url('../img/services-5.jpg') no-repeat center center/cover;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -385,7 +399,51 @@ hr {
 
 .item-6::before {
   content: '';
-  background: url('../img/pro-1.jpg') no-repeat center center/cover;
+  background: url('../img/services-6.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item-7::before {
+  content: '';
+  background: url('../img/services-7.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item-8::before {
+  content: '';
+  background: url('../img/services-8.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item-9::before {
+  content: '';
+  background: url('../img/services-9.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item-10::before {
+  content: '';
+  background: url('../img/services-10.jpg') no-repeat center center/cover;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -400,56 +458,54 @@ hr {
   height: 100%;
   padding: 4rem 0;
   background: rgba(26,28,32,0.93);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   position: relative;
-  border-radius: 10vh 0 10vh 0rem;
   overflow: hidden;
+  border-radius: 0 10vh 0 10vh;
 }
 
 #projects::before {
   content: '';
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
-  background: url('../img/showcase.jpg') no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  background: url(../img/showcase.jpg) no-repeat center center/cover;
   z-index: -1;
 }
 
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 1rem;
-  width: 80%;
-  margin: auto;
-}
-
-.projects-item {
-  display: flex;
-  border-radius: 5px;
-  overflow: hidden;
-  transition: all ease 0.8s;
-}
-
-.projects-item:hover {
-  transform: scale(1.025);
-}
-
-
-.projects-item h3 {
-  writing-mode: vertical-rl;
-  color: var(--orange-clr);
+#projects > h2 {
   text-align: center;
+  color: var(--orange-clr);
   letter-spacing: var(--letter-spacing);
-  padding: 0 10px;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
-.projects-item img {
-  height: 450px;
+.projects-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
 }
+
+.project-item img {
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+}
+
+.project-item {
+  transition: all ease 0.6s;
+  opacity: 0.8;
+}
+
+.project-item:hover {
+  transform: scale(1.025);
+  opacity: 1;
+}
+
+
 
 /* Contact */
 
@@ -526,3 +582,55 @@ hr {
   font-size: 1.2rem;
 }
 
+/* Footer */
+
+#footer {
+  height: 100%;
+  padding: 2rem 0;
+  background: var(--dark-clr);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  color: var(--white-clr);
+}
+
+.footer-container h2 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: var(--white-clr);
+  margin-bottom: 5px;
+}
+
+.footer-container .contact p{
+  margin-bottom: 5px;
+}
+
+.footer-container .social {
+  text-align: center;
+}
+
+.footer-container .social i {
+  color: var(--orange-clr);
+  font-size: 1.6rem;
+  margin: 5px;
+}
+
+.disclaimer {
+  text-align: center;
+  color: #f4f4f4;
+  margin-top: 2rem;
+}
