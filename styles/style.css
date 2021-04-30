@@ -273,6 +273,7 @@ hr {
 .testimonials-container h2 {
   writing-mode: vertical-rl;
   letter-spacing: var(--letter-spacing);
+  font-size: 1.5rem;
 }
 
 .testimonials-container h2 span {
