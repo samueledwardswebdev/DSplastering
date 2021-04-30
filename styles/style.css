@@ -250,6 +250,51 @@ hr {
   color: var(--orange-clr);
 }
 
+/* About */
+
+#testimonials {
+  height: 100%;
+  padding: 4rem 0;
+}
+
+.testimonials-container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+}
+
+.testimonials-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.testimonials-container h2 {
+  writing-mode: vertical-rl;
+  letter-spacing: var(--letter-spacing);
+}
+
+.testimonials-container h2 span {
+  color: var(--orange-clr);
+  letter-spacing: var(--letter-spacing);
+}
+
+.testimonial p {
+  font-size: 1.1rem;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+.testimonial i{
+  font-size: 1rem;
+  margin: 0 0.3rem;
+}
+
+.testimonial i {
+  color: var(--orange-clr);
+  font-size: 1.5rem;
+}
 /* Quote Banner */
 
 #quote-banner {
